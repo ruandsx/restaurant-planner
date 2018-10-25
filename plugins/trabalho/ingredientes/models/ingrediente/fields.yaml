@@ -1,0 +1,17 @@
+fields:
+    nome:
+        label: Nome
+        span: auto
+        type: text
+    quantidade:
+        label: Quantidade
+        span: auto
+        type: number
+    descricao:
+        label: Descrição
+        span: auto
+        type: text
+    valor:
+        label: Valor
+        span: auto
+        type: number

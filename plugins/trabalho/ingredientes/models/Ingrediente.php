@@ -25,4 +25,17 @@ class Ingrediente extends Model
      * @var string The database table used by the model.
      */
     public $table = 'trabalho_ingredientes_';
+
+    public $attachOne =[
+
+        'medida' => 'System\Models\Medida'
+
+    ];
+
+    public $belongsTo = [
+        'medidas' => [
+            'Trabalho\Medidas\Models\Medida',
+            'table' => 'trabalho_medidas_'
+        ]
+    ];
 }

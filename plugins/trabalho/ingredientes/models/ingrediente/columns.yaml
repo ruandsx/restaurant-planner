@@ -15,3 +15,6 @@ columns:
     valor:
         label: valor
         type: number
+    medidas_id:
+        label: medidas_id
+        type: number

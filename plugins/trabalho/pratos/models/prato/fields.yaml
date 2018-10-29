@@ -1,0 +1,19 @@
+fields:
+    nome:
+        label: Nome
+        span: auto
+        type: text
+    descricao:
+        label: Descrição
+        span: auto
+        type: text
+    valor:
+        label: Valor
+        span: full
+        type: number
+    ingredientes:
+        label: Ingredientes
+        nameFrom: nome
+        descriptionFrom: description
+        span: full
+        type: relation

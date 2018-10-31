@@ -1,4 +1,4 @@
-1540857969a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:4014:"description = "Default layout"
+1541008337a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:4064:"description = "Default layout"
 
 [session]
 security = "all"
@@ -7,10 +7,9 @@ security = "all"
 <html>
     <head>
         <meta charset="utf-8">
-        <title>October CMS - {{ this.page.title }}</title>
+        <title>Restaurant Planner - {{ this.page.title }}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
-        <meta name="author" content="October CMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}" />
         {% styles %}
@@ -93,14 +92,13 @@ security = "all"
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1540424686;s:6:"markup";s:3952:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1541007085;s:6:"markup";s:3997:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>October CMS - {{ this.page.title }}</title>
+        <title>Restaurant Planner - {{ this.page.title }}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
-        <meta name="author" content="October CMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}" />
         {% styles %}

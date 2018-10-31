@@ -1,8 +1,9 @@
 fields:
     dia:
-        label: 'Dia da Semana'
-        span: full
-        type: text
+        label: Dia
+        mode: date
+        span: left
+        type: datepicker
     pratos:
         label: 'Pratos do Dia'
         nameFrom: nome

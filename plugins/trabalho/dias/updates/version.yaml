@@ -9,3 +9,6 @@
 1.0.4:
     - 'Updated table trabalho_dias_dias_pratos'
     - builder_table_update_trabalho_dias_dias_pratos.php
+1.0.5:
+    - 'Updated table trabalho_dias_'
+    - builder_table_update_trabalho_dias_.php

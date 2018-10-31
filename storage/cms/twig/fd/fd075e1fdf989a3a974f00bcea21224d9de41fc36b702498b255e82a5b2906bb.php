@@ -23,10 +23,10 @@ class __TwigTemplate_0d12a35d901cdc3d2abc3050fba05b999309e3dc44b1643bfee531b6455
         echo "<div id=\"footer\">
     <div class=\"container\">
         <hr />
-        <p class=\"muted credit\">&copy; 2013 - ";
+        <p class=\"muted credit\">&copy;";
         // line 4
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
-        echo " Alexey Bobkov &amp; Samuel Georges.</p>
+        echo " Grupo 2 - Modelagem de Sistemas</p>
     </div>
 </div>";
     }
@@ -51,7 +51,7 @@ class __TwigTemplate_0d12a35d901cdc3d2abc3050fba05b999309e3dc44b1643bfee531b6455
         return new Twig_Source("<div id=\"footer\">
     <div class=\"container\">
         <hr />
-        <p class=\"muted credit\">&copy; 2013 - {{ \"now\"|date(\"Y\") }} Alexey Bobkov &amp; Samuel Georges.</p>
+        <p class=\"muted credit\">&copy;{{ \"now\"|date(\"Y\") }} Grupo 2 - Modelagem de Sistemas</p>
     </div>
 </div>", "C:\\Users\\ruanl\\Desktop\\modelagem/themes/rainlab-vanilla/partials/footer.htm", "");
     }

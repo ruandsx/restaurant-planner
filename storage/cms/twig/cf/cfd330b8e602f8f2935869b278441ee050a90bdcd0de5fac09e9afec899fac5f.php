@@ -24,7 +24,7 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
 <html>
     <head>
         <meta charset=\"utf-8\">
-        <title>October CMS - ";
+        <title>Restaurant Planner - ";
         // line 5
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "title", array()), "html", null, true);
         echo "</title>
@@ -36,20 +36,19 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
         // line 7
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "meta_title", array()), "html", null, true);
         echo "\">
-        <meta name=\"author\" content=\"October CMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <link rel=\"icon\" type=\"image/png\" href=\"";
-        // line 10
+        // line 9
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/october.png");
         echo "\" />
         ";
-        // line 11
+        // line 10
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 12
+        // line 11
         echo "        <link href=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter(array(0 => "assets/less/theme.less"));
-        // line 14
+        // line 13
         echo "\" rel=\"stylesheet\">
     </head>
     <body>
@@ -68,14 +67,14 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
                             <span class=\"icon-bar\"></span>
                         </button>
                         <a class=\"navbar-brand\" href=\"";
-        // line 31
+        // line 30
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">Vanilla</a>
                     </div>
                     <div class=\"collapse navbar-collapse navbar-main-collapse\">
                         <ul class=\"nav navbar-nav\">
                             <li class=\"";
-        // line 35
+        // line 34
         if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "id", array()) == "account")) {
             echo "active";
         }
@@ -83,7 +82,7 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("account");
         echo "\">Account</a></li>
                             <li class=\"";
-        // line 36
+        // line 35
         if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "id", array()) == "blog")) {
             echo "active";
         }
@@ -91,7 +90,7 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("blog");
         echo "\">Blog</a></li>
                             <li class=\"";
-        // line 37
+        // line 36
         if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "id", array()) == "forum")) {
             echo "active";
         }
@@ -101,13 +100,13 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
                         </ul>
                         <ul class=\"nav navbar-nav navbar-right\">
                             ";
-        // line 40
+        // line 39
         if (($context["user"] ?? null)) {
-            // line 41
+            // line 40
             echo "                                <li><a href=\"#\" data-request=\"onLogout\">Logout</a></li>
                             ";
         }
-        // line 43
+        // line 42
         echo "                        </ul>
                     </div>
                 </div>
@@ -116,53 +115,53 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
         </header>
 
         ";
-        // line 50
+        // line 49
         $context["jumbotronTexture"] = twig_random($this->env, array(0 => "carbon", 1 => "dustnscratches", 2 => "elegant", 3 => "grunge", 4 => "leather", 5 => "lines", 6 => "plaid", 7 => "wood"));
-        // line 51
+        // line 50
         echo "
         <!-- Content -->
         <section id=\"layout-content\">
             <div class=\"jumbotron\" style=\"background-image:url(";
-        // line 54
+        // line 53
         echo $this->extensions['Cms\Twig\Extension']->themeFilter((("assets/images/textures/" . ($context["jumbotronTexture"] ?? null)) . ".png"));
         echo ")\">
                 <div class=\"container\">
                     <h1>";
-        // line 56
+        // line 55
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "title", array()), "html", null, true);
         echo "</h1>
                     <p>";
-        // line 57
+        // line 56
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "description", array()), "html", null, true);
         echo "</p>
                 </div>
             </div>
             <div class=\"container\">
                 ";
-        // line 61
+        // line 60
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 62
+        // line 61
         echo "            </div>
         </section>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 67
+        // line 66
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 68
+        // line 67
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 71
+        // line 70
         echo $this->extensions['Cms\Twig\Extension']->themeFilter(array(0 => "assets/javascript/jquery.js", 1 => "assets/vendor/bootstrap/js/transition.js", 2 => "assets/vendor/bootstrap/js/alert.js", 3 => "assets/vendor/bootstrap/js/button.js", 4 => "assets/vendor/bootstrap/js/carousel.js", 5 => "assets/vendor/bootstrap/js/collapse.js", 6 => "assets/vendor/bootstrap/js/dropdown.js", 7 => "assets/vendor/bootstrap/js/modal.js", 8 => "assets/vendor/bootstrap/js/tooltip.js", 9 => "assets/vendor/bootstrap/js/popover.js", 10 => "assets/vendor/bootstrap/js/scrollspy.js", 11 => "assets/vendor/bootstrap/js/tab.js", 12 => "assets/vendor/bootstrap/js/affix.js", 13 => "assets/javascript/app.js"));
-        // line 86
+        // line 85
         echo "\"></script>
         ";
-        // line 87
+        // line 86
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="'. Request::getBasePath()
@@ -177,11 +176,11 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 88
+        // line 87
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 89
+        // line 88
         echo "
     </body>
 </html>";
@@ -199,7 +198,7 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
 
     public function getDebugInfo()
     {
-        return array (  185 => 89,  181 => 88,  166 => 87,  163 => 86,  161 => 71,  156 => 68,  152 => 67,  145 => 62,  143 => 61,  136 => 57,  132 => 56,  127 => 54,  122 => 51,  120 => 50,  111 => 43,  107 => 41,  105 => 40,  95 => 37,  87 => 36,  79 => 35,  72 => 31,  53 => 14,  50 => 12,  47 => 11,  43 => 10,  37 => 7,  33 => 6,  29 => 5,  23 => 1,);
+        return array (  184 => 88,  180 => 87,  165 => 86,  162 => 85,  160 => 70,  155 => 67,  151 => 66,  144 => 61,  142 => 60,  135 => 56,  131 => 55,  126 => 53,  121 => 50,  119 => 49,  110 => 42,  106 => 40,  104 => 39,  94 => 36,  86 => 35,  78 => 34,  71 => 30,  52 => 13,  49 => 11,  46 => 10,  42 => 9,  37 => 7,  33 => 6,  29 => 5,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -208,10 +207,9 @@ class __TwigTemplate_e2e8553d21c2f394ba2f5c98024da1969e688663f0321e338bcfa5070f6
 <html>
     <head>
         <meta charset=\"utf-8\">
-        <title>October CMS - {{ this.page.title }}</title>
+        <title>Restaurant Planner - {{ this.page.title }}</title>
         <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
         <meta name=\"title\" content=\"{{ this.page.meta_title }}\">
-        <meta name=\"author\" content=\"October CMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\" />
         {% styles %}

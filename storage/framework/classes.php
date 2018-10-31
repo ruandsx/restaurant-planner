@@ -119,4 +119,5 @@
   'trabalho\\dias\\Plugin' => 'plugins\\trabalho\\dias\\Plugin.php',
   'trabalho\\dias\\Controllers\\dias' => 'plugins\\trabalho\\dias\\controllers\\dias.php',
   'Trabalho\\Dias\\Models\\Dia' => 'plugins\\trabalho\\dias\\models\\Dia.php',
+  'RainLab\\Builder\\Classes\\ComponentHelper' => 'plugins\\rainlab\\builder\\classes\\ComponentHelper.php',
 );

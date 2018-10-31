@@ -1,8 +1,18 @@
-1541007846a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:1957:"title = "Vanilla"
+1541010528a:1:{s:8:"home.htm";a:11:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:2485:"title = "Vanilla"
 url = "/"
 layout = "default"
 description = "Welcome to the vanilla theme for OctoberCMS!"
 is_hidden = 0
+
+[builderList]
+modelClass = "Trabalho\Dias\Models\Dia"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "dia"
+noRecordsMessage = "Nenhum registro encontrado"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 <div class="row">
     <div class="col-sm-6 col-md-4">
@@ -49,7 +59,21 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>";s:5:"mtime";i:1541007175;s:6:"markup";s:1826:"<div class="row">
+</div>
+{% set dias = builderList.records %}
+<div class="row">
+    {% for dia in dias %}
+        <div class="col-md-4 filter-option" style="text-align: center;">
+            <h2>{{dia.dia|date('d - M') }}</h2>
+    
+    
+    
+    
+
+
+        </div>
+    {% endfor %}    
+</div>";s:5:"mtime";i:1541009927;s:6:"markup";s:2107:"<div class="row">
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail text-center">
             <br />
@@ -94,4 +118,18 @@ is_hidden = 0
             </div>
         </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:7:"Vanilla";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:11:"description";s:44:"Welcome to the vanilla theme for OctoberCMS!";s:9:"is_hidden";s:1:"0";}}
+</div>
+{% set dias = builderList.records %}
+<div class="row">
+    {% for dia in dias %}
+        <div class="col-md-4 filter-option" style="text-align: center;">
+            <h2>{{dia.dia|date('d - M') }}</h2>
+    
+    
+    
+    
+
+
+        </div>
+    {% endfor %}    
+</div>";s:4:"code";N;s:5:"title";s:7:"Vanilla";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:11:"description";s:44:"Welcome to the vanilla theme for OctoberCMS!";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:24:"Trabalho\Dias\Models\Dia";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:3:"dia";s:16:"noRecordsMessage";s:26:"Nenhum registro encontrado";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

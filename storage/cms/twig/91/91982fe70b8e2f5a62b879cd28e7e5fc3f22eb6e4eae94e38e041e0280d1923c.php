@@ -83,6 +83,37 @@ class __TwigTemplate_1ca649a2941c0a9fa55f9657b49e39d8ff900d99f080452517da4b23333
             </div>
         </div>
     </div>
+</div>
+";
+        // line 47
+        $context["dias"] = twig_get_attribute($this->env, $this->source, ($context["builderList"] ?? null), "records", array());
+        // line 48
+        echo "<div class=\"row\">
+    ";
+        // line 49
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["dias"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["dia"]) {
+            // line 50
+            echo "        <div class=\"col-md-4 filter-option\" style=\"text-align: center;\">
+            <h2>";
+            // line 51
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["dia"], "dia", array()), "d - M"), "html", null, true);
+            echo "</h2>
+    
+    
+    
+    
+
+
+        </div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['dia'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 59
+        echo "    
 </div>";
     }
 
@@ -98,7 +129,7 @@ class __TwigTemplate_1ca649a2941c0a9fa55f9657b49e39d8ff900d99f080452517da4b23333
 
     public function getDebugInfo()
     {
-        return array (  80 => 41,  71 => 35,  59 => 26,  50 => 20,  38 => 11,  29 => 5,  23 => 1,);
+        return array (  116 => 59,  101 => 51,  98 => 50,  94 => 49,  91 => 48,  89 => 47,  80 => 41,  71 => 35,  59 => 26,  50 => 20,  38 => 11,  29 => 5,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -148,6 +179,20 @@ class __TwigTemplate_1ca649a2941c0a9fa55f9657b49e39d8ff900d99f080452517da4b23333
             </div>
         </div>
     </div>
+</div>
+{% set dias = builderList.records %}
+<div class=\"row\">
+    {% for dia in dias %}
+        <div class=\"col-md-4 filter-option\" style=\"text-align: center;\">
+            <h2>{{dia.dia|date('d - M') }}</h2>
+    
+    
+    
+    
+
+
+        </div>
+    {% endfor %}    
 </div>", "C:\\Users\\ruanl\\Desktop\\modelagem/themes/rainlab-vanilla/pages/home.htm", "");
     }
 }

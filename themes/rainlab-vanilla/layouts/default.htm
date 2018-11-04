@@ -14,7 +14,9 @@ security = "all"
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}" />
         {% styles %}
         <link href="{{ [
-            'assets/less/theme.less'
+            'assets/css/theme.css',
+            'assets/slick/slick.css',
+            'assets/slick/slick-theme.css'
         ]|theme }}" rel="stylesheet">
     </head>
     <body>
@@ -86,10 +88,47 @@ security = "all"
             'assets/vendor/bootstrap/js/scrollspy.js',
             'assets/vendor/bootstrap/js/tab.js',
             'assets/vendor/bootstrap/js/affix.js',
-            'assets/javascript/app.js'
+            'assets/javascript/app.js',
+            'assets/slick/slick.js'
         ]|theme }}"></script>
+        
         {% framework extras %}
         {% scripts %}
-
+            <script>$('.responsive').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                  // You can unslick at a given breakpoint now by adding:
+                  // settings: "unslick"
+                  // instead of a settings object
+                ]
+              });
+                      </script>
     </body>
 </html>

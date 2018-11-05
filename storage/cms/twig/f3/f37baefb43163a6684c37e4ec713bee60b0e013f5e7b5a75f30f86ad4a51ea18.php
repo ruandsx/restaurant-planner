@@ -72,14 +72,11 @@ class __TwigTemplate_28dbb44a127cecb738facbf1651c8d8bc7d876258d246a0068fd83955d6
                     <a class=\"navbar-brand\" href=\"";
         // line 35
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
-        echo "\">Vanilla</a>
+        echo "\">Restaurant Planner</a>
                 </div>
                 <div class=\"collapse navbar-collapse navbar-main-collapse\">
                     <ul class=\"nav navbar-nav\">
-                        <li><a href=\"";
-        // line 39
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("backend");
-        echo "\">Configurações</a></li>
+                        <li><a href=\"/restaurant-planner/backend\">Configurações</a></li>
                         <!--
                         <li class=\"";
         // line 41
@@ -238,7 +235,7 @@ class __TwigTemplate_28dbb44a127cecb738facbf1651c8d8bc7d876258d246a0068fd83955d6
 
     public function getDebugInfo()
     {
-        return array (  188 => 99,  184 => 98,  169 => 97,  165 => 95,  163 => 79,  158 => 76,  154 => 75,  147 => 70,  145 => 69,  135 => 62,  130 => 59,  128 => 57,  119 => 50,  115 => 48,  113 => 47,  102 => 43,  94 => 42,  86 => 41,  81 => 39,  74 => 35,  53 => 16,  50 => 12,  47 => 11,  43 => 10,  38 => 8,  34 => 7,  30 => 6,  23 => 1,);
+        return array (  185 => 99,  181 => 98,  166 => 97,  162 => 95,  160 => 79,  155 => 76,  151 => 75,  144 => 70,  142 => 69,  132 => 62,  127 => 59,  125 => 57,  116 => 50,  112 => 48,  110 => 47,  99 => 43,  91 => 42,  83 => 41,  74 => 35,  53 => 16,  50 => 12,  47 => 11,  43 => 10,  38 => 8,  34 => 7,  30 => 6,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -277,11 +274,11 @@ class __TwigTemplate_28dbb44a127cecb738facbf1651c8d8bc7d876258d246a0068fd83955d6
                         <span class=\"icon-bar\"></span>
                         <span class=\"icon-bar\"></span>
                     </button>
-                    <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">Vanilla</a>
+                    <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">Restaurant Planner</a>
                 </div>
                 <div class=\"collapse navbar-collapse navbar-main-collapse\">
                     <ul class=\"nav navbar-nav\">
-                        <li><a href=\"{{ 'backend'|page }}\">Configurações</a></li>
+                        <li><a href=\"/restaurant-planner/backend\">Configurações</a></li>
                         <!--
                         <li class=\"{% if this.page.id == 'account' %}active{% endif %}\"><a href=\"{{ 'account'|page }}\">Account</a></li>
                         <li class=\"{% if this.page.id == 'blog' %}active{% endif %}\"><a href=\"{{ 'blog'|page }}\">Blog</a></li>

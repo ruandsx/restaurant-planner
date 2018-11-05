@@ -1,4 +1,4 @@
-1541377698a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:5231:"description = "Default layout"
+1541389556a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:5249:"description = "Default layout"
 
 [session]
 security = "all"
@@ -37,11 +37,11 @@ security = "all"
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{ 'home'|page }}">Vanilla</a>
+                    <a class="navbar-brand" href="{{ 'home'|page }}">Restaurant Planner</a>
                 </div>
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ 'backend'|page }}">Configurações</a></li>
+                        <li><a href="/restaurant-planner/backend">Configurações</a></li>
                         <!--
                         <li class="{% if this.page.id == 'account' %}active{% endif %}"><a href="{{ 'account'|page }}">Account</a></li>
                         <li class="{% if this.page.id == 'blog' %}active{% endif %}"><a href="{{ 'blog'|page }}">Blog</a></li>
@@ -139,7 +139,7 @@ security = "all"
     </script>
 </body>
 
-</html>";s:5:"mtime";i:1541376490;s:6:"markup";s:5164:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1541388955;s:6:"markup";s:5182:"<!DOCTYPE html>
 <html>
 
 <head>
@@ -173,11 +173,11 @@ security = "all"
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{ 'home'|page }}">Vanilla</a>
+                    <a class="navbar-brand" href="{{ 'home'|page }}">Restaurant Planner</a>
                 </div>
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ 'backend'|page }}">Configurações</a></li>
+                        <li><a href="/restaurant-planner/backend">Configurações</a></li>
                         <!--
                         <li class="{% if this.page.id == 'account' %}active{% endif %}"><a href="{{ 'account'|page }}">Account</a></li>
                         <li class="{% if this.page.id == 'blog' %}active{% endif %}"><a href="{{ 'blog'|page }}">Blog</a></li>

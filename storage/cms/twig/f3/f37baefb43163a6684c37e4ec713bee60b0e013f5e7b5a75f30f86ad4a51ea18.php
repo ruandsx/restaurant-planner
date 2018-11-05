@@ -22,147 +22,150 @@ class __TwigTemplate_28dbb44a127cecb738facbf1651c8d8bc7d876258d246a0068fd83955d6
         // line 1
         echo "<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset=\"utf-8\">
-        <title>Restaurant Planner - ";
-        // line 5
+
+<head>
+    <meta charset=\"utf-8\">
+    <title>Restaurant Planner - ";
+        // line 6
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "title", array()), "html", null, true);
         echo "</title>
-        <meta name=\"description\" content=\"";
-        // line 6
+    <meta name=\"description\" content=\"";
+        // line 7
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "meta_description", array()), "html", null, true);
         echo "\">
-        <meta name=\"title\" content=\"";
-        // line 7
+    <meta name=\"title\" content=\"";
+        // line 8
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "meta_title", array()), "html", null, true);
         echo "\">
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <link rel=\"icon\" type=\"image/png\" href=\"";
-        // line 9
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <link rel=\"icon\" type=\"image/png\" href=\"";
+        // line 10
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/october.png");
         echo "\" />
-        ";
-        // line 10
+    ";
+        // line 11
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 11
-        echo "        <link href=\"";
+        // line 12
+        echo "    <link href=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter(array(0 => "assets/css/theme.css", 1 => "assets/slick/slick.css", 2 => "assets/slick/slick-theme.css"));
-        // line 15
-        echo "\" rel=\"stylesheet\">
-    </head>
-    <body>
+        // line 16
+        echo "\"
+        rel=\"stylesheet\">
+</head>
 
-        <!-- Header -->
-        <header id=\"layout-header\">
+<body>
 
-            <!-- Nav -->
-            <nav id=\"layout-nav\" class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
-                <div class=\"container\">
-                    <div class=\"navbar-header\">
-                        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">
-                            <span class=\"sr-only\">Toggle navigation</span>
-                            <span class=\"icon-bar\"></span>
-                            <span class=\"icon-bar\"></span>
-                            <span class=\"icon-bar\"></span>
-                        </button>
-                        <a class=\"navbar-brand\" href=\"";
-        // line 32
+    <!-- Header -->
+    <header id=\"layout-header\">
+
+        <!-- Nav -->
+        <nav id=\"layout-nav\" class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
+            <div class=\"container\">
+                <div class=\"navbar-header\">
+                    <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">
+                        <span class=\"sr-only\">Toggle navigation</span>
+                        <span class=\"icon-bar\"></span>
+                        <span class=\"icon-bar\"></span>
+                        <span class=\"icon-bar\"></span>
+                    </button>
+                    <a class=\"navbar-brand\" href=\"";
+        // line 35
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">Vanilla</a>
-                    </div>
-                    <div class=\"collapse navbar-collapse navbar-main-collapse\">
-                        <ul class=\"nav navbar-nav\">
-                            <li class=\"";
-        // line 36
+                </div>
+                <div class=\"collapse navbar-collapse navbar-main-collapse\">
+                    <ul class=\"nav navbar-nav\">
+                        <li><a href=\"";
+        // line 39
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("backend");
+        echo "\">Configurações</a></li>
+                        <!--
+                        <li class=\"";
+        // line 41
         if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "id", array()) == "account")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("account");
         echo "\">Account</a></li>
-                            <li class=\"";
-        // line 37
+                        <li class=\"";
+        // line 42
         if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "id", array()) == "blog")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("blog");
         echo "\">Blog</a></li>
-                            <li class=\"";
-        // line 38
+                        <li class=\"";
+        // line 43
         if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "id", array()) == "forum")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("forum");
         echo "\">Forum</a></li>
-                        </ul>
-                        <ul class=\"nav navbar-nav navbar-right\">
-                            ";
-        // line 41
+                        -->
+                    </ul>
+                    <ul class=\"nav navbar-nav navbar-right\">
+                        ";
+        // line 47
         if (($context["user"] ?? null)) {
-            // line 42
-            echo "                                <li><a href=\"#\" data-request=\"onLogout\">Logout</a></li>
-                            ";
+            // line 48
+            echo "                        <li><a href=\"#\" data-request=\"onLogout\">Logout</a></li>
+                        ";
         }
-        // line 44
-        echo "                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-        </header>
-
-        ";
-        // line 51
-        $context["jumbotronTexture"] = twig_random($this->env, array(0 => "carbon", 1 => "dustnscratches", 2 => "elegant", 3 => "grunge", 4 => "leather", 5 => "lines", 6 => "plaid", 7 => "wood"));
-        // line 52
-        echo "
-        <!-- Content -->
-        <section id=\"layout-content\">
-            <div class=\"jumbotron\" style=\"background-image:url(";
-        // line 55
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter((("assets/images/textures/" . ($context["jumbotronTexture"] ?? null)) . ".png"));
-        echo ")\">
-                <div class=\"container\">
-                    <h1>";
-        // line 57
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "title", array()), "html", null, true);
-        echo "</h1>
-                    <p>";
-        // line 58
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "description", array()), "html", null, true);
-        echo "</p>
+        // line 50
+        echo "                    </ul>
                 </div>
             </div>
-            <div class=\"container\">
-                ";
-        // line 62
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 63
-        echo "            </div>
-        </section>
+        </nav>
 
-        <!-- Footer -->
-        <footer id=\"layout-footer\">
+    </header>
+
+    ";
+        // line 57
+        $context["jumbotronTexture"] = twig_random($this->env, array(0 => "carbon", 1 => "dustnscratches", 2 => "elegant", 3 => "grunge", 4 => "leather", 5 => "lines", 6 => "plaid", 7 => "wood"));
+        // line 59
+        echo "
+    <!-- Content -->
+    <section id=\"layout-content\">
+        <div class=\"jumbotron\" style=\"background-image:url(";
+        // line 62
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter((("assets/images/textures/" . ($context["jumbotronTexture"] ?? null)) . ".png"));
+        echo ")\">
+            <div class=\"container\">
+                <h1>Restaurant Planner</h1>
+                <p>Self-Service Planning</p>
+            </div>
+        </div>
+        <div class=\"container\">
             ";
-        // line 68
+        // line 69
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 70
+        echo "        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id=\"layout-footer\">
+        ";
+        // line 75
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 69
-        echo "        </footer>
+        // line 76
+        echo "    </footer>
 
-        <!-- Scripts -->
-        <script src=\"";
-        // line 72
+    <!-- Scripts -->
+    <script src=\"";
+        // line 79
         echo $this->extensions['Cms\Twig\Extension']->themeFilter(array(0 => "assets/javascript/jquery.js", 1 => "assets/vendor/bootstrap/js/transition.js", 2 => "assets/vendor/bootstrap/js/alert.js", 3 => "assets/vendor/bootstrap/js/button.js", 4 => "assets/vendor/bootstrap/js/carousel.js", 5 => "assets/vendor/bootstrap/js/collapse.js", 6 => "assets/vendor/bootstrap/js/dropdown.js", 7 => "assets/vendor/bootstrap/js/modal.js", 8 => "assets/vendor/bootstrap/js/tooltip.js", 9 => "assets/vendor/bootstrap/js/popover.js", 10 => "assets/vendor/bootstrap/js/scrollspy.js", 11 => "assets/vendor/bootstrap/js/tab.js", 12 => "assets/vendor/bootstrap/js/affix.js", 13 => "assets/javascript/app.js", 14 => "assets/slick/slick.js"));
-        // line 88
+        // line 95
         echo "\"></script>
-        
-        ";
-        // line 90
+
+    ";
+        // line 97
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="'. Request::getBasePath()
@@ -177,48 +180,49 @@ class __TwigTemplate_28dbb44a127cecb738facbf1651c8d8bc7d876258d246a0068fd83955d6
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 91
-        echo "        ";
+        // line 98
+        echo "    ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 92
-        echo "            <script>\$('.responsive').slick({
-                dots: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [
-                  {
+        // line 99
+        echo "    <script>\$('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
                     breakpoint: 1024,
                     settings: {
-                      slidesToShow: 3,
-                      slidesToScroll: 3,
-                      infinite: true,
-                      dots: true
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
                     }
-                  },
-                  {
+                },
+                {
                     breakpoint: 600,
                     settings: {
-                      slidesToShow: 2,
-                      slidesToScroll: 2
+                        slidesToShow: 2,
+                        slidesToScroll: 2
                     }
-                  },
-                  {
+                },
+                {
                     breakpoint: 480,
                     settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
-                  }
-                  // You can unslick at a given breakpoint now by adding:
-                  // settings: \"unslick\"
-                  // instead of a settings object
-                ]
-              });
-                      </script>
-    </body>
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: \"unslick\"
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
 </html>";
     }
 
@@ -234,83 +238,90 @@ class __TwigTemplate_28dbb44a127cecb738facbf1651c8d8bc7d876258d246a0068fd83955d6
 
     public function getDebugInfo()
     {
-        return array (  185 => 92,  181 => 91,  166 => 90,  162 => 88,  160 => 72,  155 => 69,  151 => 68,  144 => 63,  142 => 62,  135 => 58,  131 => 57,  126 => 55,  121 => 52,  119 => 51,  110 => 44,  106 => 42,  104 => 41,  94 => 38,  86 => 37,  78 => 36,  71 => 32,  52 => 15,  49 => 11,  46 => 10,  42 => 9,  37 => 7,  33 => 6,  29 => 5,  23 => 1,);
+        return array (  188 => 99,  184 => 98,  169 => 97,  165 => 95,  163 => 79,  158 => 76,  154 => 75,  147 => 70,  145 => 69,  135 => 62,  130 => 59,  128 => 57,  119 => 50,  115 => 48,  113 => 47,  102 => 43,  94 => 42,  86 => 41,  81 => 39,  74 => 35,  53 => 16,  50 => 12,  47 => 11,  43 => 10,  38 => 8,  34 => 7,  30 => 6,  23 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset=\"utf-8\">
-        <title>Restaurant Planner - {{ this.page.title }}</title>
-        <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
-        <meta name=\"title\" content=\"{{ this.page.meta_title }}\">
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\" />
-        {% styles %}
-        <link href=\"{{ [
+
+<head>
+    <meta charset=\"utf-8\">
+    <title>Restaurant Planner - {{ this.page.title }}</title>
+    <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
+    <meta name=\"title\" content=\"{{ this.page.meta_title }}\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\" />
+    {% styles %}
+    <link href=\"{{ [
             'assets/css/theme.css',
             'assets/slick/slick.css',
             'assets/slick/slick-theme.css'
-        ]|theme }}\" rel=\"stylesheet\">
-    </head>
-    <body>
+        ]|theme }}\"
+        rel=\"stylesheet\">
+</head>
 
-        <!-- Header -->
-        <header id=\"layout-header\">
+<body>
 
-            <!-- Nav -->
-            <nav id=\"layout-nav\" class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
-                <div class=\"container\">
-                    <div class=\"navbar-header\">
-                        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">
-                            <span class=\"sr-only\">Toggle navigation</span>
-                            <span class=\"icon-bar\"></span>
-                            <span class=\"icon-bar\"></span>
-                            <span class=\"icon-bar\"></span>
-                        </button>
-                        <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">Vanilla</a>
-                    </div>
-                    <div class=\"collapse navbar-collapse navbar-main-collapse\">
-                        <ul class=\"nav navbar-nav\">
-                            <li class=\"{% if this.page.id == 'account' %}active{% endif %}\"><a href=\"{{ 'account'|page }}\">Account</a></li>
-                            <li class=\"{% if this.page.id == 'blog' %}active{% endif %}\"><a href=\"{{ 'blog'|page }}\">Blog</a></li>
-                            <li class=\"{% if this.page.id == 'forum' %}active{% endif %}\"><a href=\"{{ 'forum'|page }}\">Forum</a></li>
-                        </ul>
-                        <ul class=\"nav navbar-nav navbar-right\">
-                            {% if user %}
-                                <li><a href=\"#\" data-request=\"onLogout\">Logout</a></li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    <!-- Header -->
+    <header id=\"layout-header\">
 
-        </header>
-
-        {% set jumbotronTexture = random(['carbon', 'dustnscratches', 'elegant', 'grunge', 'leather', 'lines', 'plaid', 'wood']) %}
-
-        <!-- Content -->
-        <section id=\"layout-content\">
-            <div class=\"jumbotron\" style=\"background-image:url({{ ('assets/images/textures/'~jumbotronTexture~'.png')|theme }})\">
-                <div class=\"container\">
-                    <h1>{{ this.page.title }}</h1>
-                    <p>{{ this.page.description }}</p>
-                </div>
-            </div>
+        <!-- Nav -->
+        <nav id=\"layout-nav\" class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
             <div class=\"container\">
-                {% page %}
+                <div class=\"navbar-header\">
+                    <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">
+                        <span class=\"sr-only\">Toggle navigation</span>
+                        <span class=\"icon-bar\"></span>
+                        <span class=\"icon-bar\"></span>
+                        <span class=\"icon-bar\"></span>
+                    </button>
+                    <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">Vanilla</a>
+                </div>
+                <div class=\"collapse navbar-collapse navbar-main-collapse\">
+                    <ul class=\"nav navbar-nav\">
+                        <li><a href=\"{{ 'backend'|page }}\">Configurações</a></li>
+                        <!--
+                        <li class=\"{% if this.page.id == 'account' %}active{% endif %}\"><a href=\"{{ 'account'|page }}\">Account</a></li>
+                        <li class=\"{% if this.page.id == 'blog' %}active{% endif %}\"><a href=\"{{ 'blog'|page }}\">Blog</a></li>
+                        <li class=\"{% if this.page.id == 'forum' %}active{% endif %}\"><a href=\"{{ 'forum'|page }}\">Forum</a></li>
+                        -->
+                    </ul>
+                    <ul class=\"nav navbar-nav navbar-right\">
+                        {% if user %}
+                        <li><a href=\"#\" data-request=\"onLogout\">Logout</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
             </div>
-        </section>
+        </nav>
 
-        <!-- Footer -->
-        <footer id=\"layout-footer\">
-            {% partial \"footer\" %}
-        </footer>
+    </header>
 
-        <!-- Scripts -->
-        <script src=\"{{ [
+    {% set jumbotronTexture = random(['carbon', 'dustnscratches', 'elegant', 'grunge', 'leather', 'lines', 'plaid',
+    'wood']) %}
+
+    <!-- Content -->
+    <section id=\"layout-content\">
+        <div class=\"jumbotron\" style=\"background-image:url({{ ('assets/images/textures/'~jumbotronTexture~'.png')|theme }})\">
+            <div class=\"container\">
+                <h1>Restaurant Planner</h1>
+                <p>Self-Service Planning</p>
+            </div>
+        </div>
+        <div class=\"container\">
+            {% page %}
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id=\"layout-footer\">
+        {% partial \"footer\" %}
+    </footer>
+
+    <!-- Scripts -->
+    <script src=\"{{ [
             'assets/javascript/jquery.js',
             'assets/vendor/bootstrap/js/transition.js',
             'assets/vendor/bootstrap/js/alert.js',
@@ -327,46 +338,47 @@ class __TwigTemplate_28dbb44a127cecb738facbf1651c8d8bc7d876258d246a0068fd83955d6
             'assets/javascript/app.js',
             'assets/slick/slick.js'
         ]|theme }}\"></script>
-        
-        {% framework extras %}
-        {% scripts %}
-            <script>\$('.responsive').slick({
-                dots: true,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [
-                  {
+
+    {% framework extras %}
+    {% scripts %}
+    <script>\$('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
                     breakpoint: 1024,
                     settings: {
-                      slidesToShow: 3,
-                      slidesToScroll: 3,
-                      infinite: true,
-                      dots: true
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
                     }
-                  },
-                  {
+                },
+                {
                     breakpoint: 600,
                     settings: {
-                      slidesToShow: 2,
-                      slidesToScroll: 2
+                        slidesToShow: 2,
+                        slidesToScroll: 2
                     }
-                  },
-                  {
+                },
+                {
                     breakpoint: 480,
                     settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
-                  }
-                  // You can unslick at a given breakpoint now by adding:
-                  // settings: \"unslick\"
-                  // instead of a settings object
-                ]
-              });
-                      </script>
-    </body>
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: \"unslick\"
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
 </html>", "C:\\xampp\\htdocs\\restaurant-planner/themes/rainlab-vanilla/layouts/default.htm", "");
     }
 }

@@ -39,7 +39,7 @@ class __TwigTemplate_6ab4daf1d8bbb589352410e981aedbc372bbefbc2381f865778de6df626
         <div class=\"caption\">
             <h3>";
             // line 9
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["dia"], "dia", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["dia"], "dia", array()), "d/m/y"), "html", null, true);
             echo "</h3>
             ";
             // line 10
@@ -92,7 +92,7 @@ class __TwigTemplate_6ab4daf1d8bbb589352410e981aedbc372bbefbc2381f865778de6df626
         <br />
         <img src=\"{{ 'assets/images/plugin-user.png'|theme }}\" alt=\"RainLab.User\" />
         <div class=\"caption\">
-            <h3>{{ dia.dia }}</h3>
+            <h3>{{ dia.dia |date(\"d/m/y\") }}</h3>
             {% for prato in dia.pratos %}
             <p> {{ prato.nome }}</p>
             {% endfor %}

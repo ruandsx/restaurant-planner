@@ -4,4 +4,4 @@ columns:
         type: number
     dia:
         label: dia
-        type: text
+        type: date

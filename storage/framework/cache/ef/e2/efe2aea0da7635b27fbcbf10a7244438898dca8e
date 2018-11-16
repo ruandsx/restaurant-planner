@@ -1,4 +1,4 @@
-1541392839a:1:{s:8:"blog.htm";a:12:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:593:"title = "Blog"
+1542395663a:1:{s:8:"blog.htm";a:12:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:593:"title = "Blog"
 url = "/blog/:page?"
 layout = "default"
 description = "The main blog page, with all posts."
@@ -24,7 +24,7 @@ categoryPage = "blog/category"
     <div class="col-md-4">
         {% partial 'blog/categories' %}
     </div>
-</div>";s:5:"mtime";i:1541183684;s:6:"markup";s:182:"<div class="row">
+</div>";s:5:"mtime";i:1541507864;s:6:"markup";s:182:"<div class="row">
     <div class="col-md-8">
         {% partial 'blog/posts' %}
     </div>

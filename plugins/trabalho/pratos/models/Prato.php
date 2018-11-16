@@ -30,6 +30,10 @@ class Prato extends Model
         'ingredientes' => [
             'Trabalho\Ingredientes\Models\Ingrediente',
             'table' => 'trabalho_pratos_pratos_ingredientes'
+        ],
+        'quantidades' => [
+            'Trabalho\Ingredientes\Models\Ingrediente',
+            'table' => 'trabalho_pratos_pratos_ingredientes'
         ]
     ];
 }

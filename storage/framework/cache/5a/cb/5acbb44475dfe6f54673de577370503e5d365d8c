@@ -1,4 +1,4 @@
-1541392839a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:590:"title = "Blog Post"
+1542395663a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:590:"title = "Blog Post"
 url = "/blog/post/:slug"
 layout = "default"
 description = "Viewing a single blog post"
@@ -28,7 +28,7 @@ function onEnd()
     {% component 'forumEmbedTopic' %}
 {% else %}
     <p>Please <a href="{{ 'account'|page }}">sign in</a> to comment!</p>
-{% endif %}";s:5:"mtime";i:1541183684;s:6:"markup";s:208:"{% component 'blogPost' %}
+{% endif %}";s:5:"mtime";i:1541507864;s:6:"markup";s:208:"{% component 'blogPost' %}
 
 <hr />
 <h4>Comments</h4>

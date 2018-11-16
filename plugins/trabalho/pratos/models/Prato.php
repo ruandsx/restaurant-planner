@@ -25,15 +25,11 @@ class Prato extends Model
      * @var string The database table used by the model.
      */
     public $table = 'trabalho_pratos_';
-
-    public $belongsToMany = [
-        'ingredientes' => [
+    protected $jsonable = ['ingredientes'];
+    public $hasMany = [
+        'ingrediente' => [
             'Trabalho\Ingredientes\Models\Ingrediente',
             'table' => 'trabalho_pratos_pratos_ingredientes'
         ],
-        'quantidades' => [
-            'Trabalho\Ingredientes\Models\Ingrediente',
-            'table' => 'trabalho_pratos_pratos_ingredientes'
-        ]
     ];
 }

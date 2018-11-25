@@ -19,7 +19,7 @@ fields:
         form:
             fields:
                 ingrediente:
-                    label: Ingrediente
+                    label: 'Ingrediente - selecionar um ingrediente por vez'
                     nameFrom: nome
                     descriptionFrom: description
                     span: auto
